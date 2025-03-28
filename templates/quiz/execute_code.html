@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'programs' %}">{% trans 'Programs' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{% trans 'Code Editor' %}</li>
+    </ol>
+</nav>
+
+<div class="title-1">{% trans 'Python Interpreter for' %} {{ course|truncatechars:15 }}</div>
+<br><br>
+
+<div class="container">
+    <h2>{{ program.title }}</h2>
+    <p>{{ program.description }}</p>
+    
+    <form id="code-form" method="POST">{% csrf_token %}
+        <div class="mb-3">
+            <label for="code">{% trans 'Enter Python code' %}</label>
+            <textarea class="form-control" id="code" name="code" rows="10">{{ program.code }}</textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="runCode()">{% trans 'Run' %}</button>
+    </form>
+
+    <h3>{% trans 'Result' %}:</h3>
+    <pre id="output" class="p-3 border bg-light"></pre>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+    function runCode() {
+        var code = document.getElementById("code").value;
+        fetch("{% url 'execute_python_code' %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": getCookie("csrftoken")
+            },
+            body: JSON.stringify({ code: code })
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("output").textContent = data.run.stdout || data.run.stderr || "{% trans 'Error!' %}";
+        })
+        .catch(error => {
+            document.getElementById("output").textContent = "{% trans 'Execution error!' %}";
+        });
+    }
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+</script>
+{% endblock js %}
