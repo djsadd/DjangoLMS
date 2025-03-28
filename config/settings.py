@@ -149,6 +149,7 @@ LANGUAGES = (
     ("fr", gettext("French")),
     ("es", gettext("Spanish")),
     ("ru", gettext("Russia")),
+    ('kk', gettext('Kazakh')),
 )
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)

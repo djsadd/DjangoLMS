@@ -1,0 +1,3300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-29 13:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: accounts/models.py:14 course/models.py:24
+msgid "Bachelor"
+msgstr "Бакалавр"
+
+#: accounts/models.py:15 course/models.py:25
+msgid "Master"
+msgstr "Магистр"
+
+#: accounts/models.py:19 course/models.py:29
+msgid "Bachelor Degree"
+msgstr "Бакалавр деңгейі"
+
+#: accounts/models.py:20 course/models.py:30
+msgid "Master Degree"
+msgstr "Магистратура"
+
+#: accounts/models.py:23 accounts/models.py:32
+msgid "Father"
+msgstr "Әке"
+
+#: accounts/models.py:24 accounts/models.py:33
+msgid "Mother"
+msgstr "Ана"
+
+#: accounts/models.py:25 accounts/models.py:34
+msgid "Brother"
+msgstr "Аға"
+#: accounts/models.py:26 accounts/models.py:35
+msgid "Sister"
+msgstr "Әпке"  # Или "Сіңлі" в зависимости от возраста
+
+#: accounts/models.py:27 accounts/models.py:36
+msgid "Grand mother"
+msgstr "Әже"
+
+#: accounts/models.py:28 accounts/models.py:37
+msgid "Grand father"
+msgstr "Ата"
+
+#: accounts/models.py:29 accounts/models.py:38
+msgid "Other"
+msgstr "Басқалары"
+
+#: accounts/models.py:67
+msgid "M"
+msgstr "Е"
+
+#: accounts/models.py:67
+msgid "Male"
+msgstr "Ер адам"
+
+#: accounts/models.py:67
+msgid "F"
+msgstr "Ә"
+
+#: accounts/models.py:67
+msgid "Female"
+msgstr "Әйел адам"
+
+#: accounts/models.py:103
+msgid "Admin"
+msgstr "Әкімші"
+
+#: accounts/models.py:105 templates/result/add_score_for.html:52
+msgid "Student"
+msgstr "Студент"
+
+#: accounts/models.py:107 templates/course/course_allocation_view.html:32
+msgid "Lecturer"
+msgstr "Оқытушы"
+
+#: accounts/models.py:109
+msgid "Parent"
+msgstr "Ата-ана"
+
+#: accounts/validators.py:12
+msgid ""
+"Enter a valid username. This value may contain only English letters, "
+"numbers, and @/./+/-/_ characters."
+msgstr "Жарамды пайдаланушы атын енгізіңіз. Бұл мән тек ағылшын әріптерін, "
+"сандарды және @/./+/-/_ таңбаларын қамтуы мүмкін."
+
+#: config/settings.py:147
+msgid "English"
+msgstr "Ағылшын"
+
+#: config/settings.py:148
+msgid "Russia"
+msgstr "Орыс"
+
+#: core/models.py:9 core/models.py:13 templates/core/index.html:47
+#: templates/core/index.html:52 templates/setting/admin_panel.html:80
+#: templates/setting/admin_panel.html:81
+msgid "News"
+msgstr "Жаңалықтар"
+
+#: core/models.py:10 core/models.py:14
+msgid "Event"
+msgstr "Оқиға"
+
+#: core/models.py:17 core/models.py:22 course/models.py:33 course/models.py:38
+msgid "First"
+msgstr "Бірінші"
+
+#: core/models.py:18 core/models.py:23 course/models.py:34 course/models.py:39
+msgid "Second"
+msgstr "Екінші"
+
+#: core/models.py:19 core/models.py:24 course/models.py:35 course/models.py:40
+msgid "Third"
+msgstr "Үшінші"
+
+#: course/models.py:71
+#, python-brace-format
+msgid "The program '{instance}' has been {verb}."
+msgstr "'{instance}' бағдарламасы {verb} болды."
+
+#: course/models.py:76
+#, python-brace-format
+msgid "The program '{instance}' has been deleted."
+msgstr "'{instance}' бағдарламасы жойылды."
+
+#: course/models.py:138
+#, python-brace-format
+msgid "The course '{instance}' has been {verb}."
+msgstr "'{instance}' курсы {verb} болды."
+
+#: course/models.py:143
+#, python-brace-format
+msgid "The course '{instance}' has been deleted."
+msgstr "'{instance}' курсы жойылды."
+
+#: course/models.py:150
+msgid "allocated_lecturer"
+msgstr "тағайындалған оқытушы"
+
+#: course/models.py:152
+msgid "allocated_course"
+msgstr "тағайындалған курс"
+
+#: course/models.py:218
+#, python-brace-format
+msgid "The file '{instance.title}' has been uploaded to the course '{instance.course}'."
+msgstr "'{instance.title}' файлы '{instance.course}' курсына жүктелді."
+
+#: course/models.py:224
+#, python-brace-format
+msgid "The file '{instance.title}' of the course '{instance.course}' has been updated."
+msgstr "'{instance.course}' курсының '{instance.title}' файлы жаңартылды."
+
+#: course/models.py:233
+#, python-brace-format
+msgid "The file '{instance.title}' of the course '{instance.course}' has been deleted."
+msgstr "'{instance.course}' курсының '{instance.title}' файлы жойылды."
+
+#: course/models.py:244
+msgid "Valid video formats: mp4, mkv, wmv, 3gp, f4v, avi, mp3"
+msgstr "Қолдау көрсетілетін видео форматтары: mp4, mkv, wmv, 3gp, f4v, avi, mp3"
+
+#: course/models.py:278
+#, python-brace-format
+msgid "The video '{instance.title}' has been uploaded to the course {instance.course}."
+msgstr "'{instance.title}' видеосы '{instance.course}' курсына жүктелді."
+
+#: course/models.py:284
+#, python-brace-format
+msgid "The video '{instance.title}' of the course '{instance.course}' has been updated."
+msgstr "'{instance.course}' курсының '{instance.title}' видеосы жаңартылды."
+
+#: course/models.py:293
+#, python-brace-format
+msgid "The video '{instance.title}' of the course '{instance.course}' has been deleted."
+msgstr "'{instance.course}' курсының '{instance.title}' видеосы жойылды."
+
+#: course/models.py:299
+msgid "NOTE: Only department head can offer semester courses"
+msgstr "ЕСКЕРТУ: Тек кафедра меңгерушісі ғана семестрлік курстарды ұсына алады."
+
+#: quiz/admin.py:31 quiz/admin.py:32 quiz/forms.py:38 quiz/forms.py:39
+#: quiz/models.py:468 templates/quiz/quiz_list.html:41
+msgid "Questions"
+msgstr "Сұрақтар"
+#: quiz/models.py:23 quiz/models.py:529
+msgid "Content"
+msgstr "Мазмұн"
+
+#: quiz/models.py:24
+msgid "Random"
+msgstr "Кездейсоқ"
+
+#: quiz/models.py:25
+#: venv/lib/python3.9/site-packages/modeltranslation/widgets.py:32
+msgid "None"
+msgstr "Жоқ"
+
+#: quiz/models.py:29 templates/result/add_score_for.html:53
+#: templates/result/assessment_results.html:40
+#: templates/result/assessment_results.html:82
+msgid "Assignment"
+msgstr "Тапсырма"
+
+#: quiz/models.py:30
+msgid "Exam"
+msgstr "Емтихан"
+
+#: quiz/models.py:31
+msgid "Practice Quiz"
+msgstr "Практикалық тест"
+
+#: quiz/models.py:53
+msgid "Title"
+msgstr "Атауы"
+
+#: quiz/models.py:56
+msgid "Description"
+msgstr "Сипаттама"
+
+#: quiz/models.py:58
+msgid "A detailed description of the quiz"
+msgstr "Тесттің толық сипаттамасы"
+
+#: quiz/models.py:64
+msgid "Random Order"
+msgstr "Кездейсоқ рет"
+
+#: quiz/models.py:65
+msgid "Display the questions in a random order or as they are set?"
+msgstr "Сұрақтарды кездейсоқ ретпен немесе берілген тәртіппен көрсету?"
+
+#: quiz/models.py:74
+msgid "Answers at end"
+msgstr "Жауаптар соңында"
+
+#: quiz/models.py:76
+msgid "Correct answer is NOT shown after question. Answers displayed at the end."
+msgstr "Дұрыс жауап сұрақтан кейін көрсетілмейді. Жауаптар соңында көрсетіледі."
+
+#: quiz/models.py:83
+msgid "Exam Paper"
+msgstr "Емтихан жұмысы"
+
+#: quiz/models.py:85
+msgid "If yes, the result of each attempt by a user will be stored. Necessary for marking."
+msgstr "Иә болса, пайдаланушының әрбір әрекетінің нәтижесі сақталады. Бағалау үшін қажет."
+
+#: quiz/models.py:92
+msgid "Single Attempt"
+msgstr "Бір рет әрекет ету"
+
+#: quiz/models.py:93
+msgid "If yes, only one attempt by a user will be permitted."
+msgstr "Иә болса, пайдаланушыға тек бір ғана әрекет жасауға рұқсат беріледі."
+
+#: quiz/models.py:99
+msgid "Pass Mark"
+msgstr "Өту баллы"
+
+#: quiz/models.py:101
+msgid "Percentage required to pass exam."
+msgstr "Емтиханды тапсыру үшін қажетті пайыздық көрсеткіш."
+
+#: quiz/models.py:107
+msgid "Draft"
+msgstr "Жоба"
+
+#: quiz/models.py:109
+msgid "If yes, the quiz is not displayed in the quiz list and can only be taken by users who can edit quizzes."
+msgstr "Иә болса, тест тесттер тізімінде көрсетілмейді және тек тесттерді өңдей алатын пайдаланушыларға қолжетімді."
+
+#: quiz/models.py:129 quiz/models.py:290 quiz/models.py:443
+#: templates/quiz/quiz_list.html:39 templates/quiz/sitting_list.html:37
+#: templates/result/add_score_for.html:55
+#: templates/result/assessment_results.html:42
+#: templates/result/assessment_results.html:84
+#: templates/search/search_view.html:79 templates/search/search_view.html:127
+msgid "Quiz"
+msgstr "Тест"
+
+#: quiz/models.py:130 templates/question.html:16
+#: templates/quiz/mcquestion_form.html:13 templates/quiz/quiz_form.html:13
+#: templates/quiz/quiz_list.html:16 templates/quiz/quiz_list.html:26
+#: templates/result.html:18
+msgid "Quizzes"
+msgstr "Тесттер"
+
+#: quiz/models.py:164 quiz/models.py:288 templates/quiz/sitting_detail.html:24
+#: templates/quiz/sitting_list.html:35
+msgid "User"
+msgstr "Пайдаланушы"
+
+#: quiz/models.py:168 templates/progress.html:68
+#: templates/quiz/sitting_detail.html:26 templates/quiz/sitting_list.html:39
+msgid "Score"
+msgstr "Баға"
+
+#: quiz/models.py:175
+msgid "User Progress"
+msgstr "Пайдаланушының прогресі"
+
+#: quiz/models.py:176
+msgid "User progress records"
+msgstr "Пайдаланушы прогресінің жазбалары"
+
+#: quiz/models.py:203
+msgid "error"
+msgstr "қате"
+
+#: quiz/models.py:203
+msgid "category does not exist or invalid score"
+msgstr "санат жоқ немесе жарамсыз баға"
+
+#: quiz/models.py:248
+msgid "Question set of the quiz is empty. Please configure questions properly"
+msgstr "Тесттің сұрақтар жинағы бос. Сұрақтарды дұрыс баптаңыз."
+
+#: quiz/models.py:292 templates/quiz/sitting_list.html:36
+#: templates/search/search_view.html:59 templates/search/search_view.html:125
+msgid "Course"
+msgstr "Курс"
+
+#: quiz/models.py:297
+msgid "Question Order"
+msgstr "Сұрақтардың реті"
+
+#: quiz/models.py:303
+msgid "Question List"
+msgstr "Сұрақтар тізімі"
+
+#: quiz/models.py:310
+msgid "Incorrect questions"
+msgstr "Қате сұрақтар"
+
+#: quiz/models.py:314
+msgid "Current Score"
+msgstr "Ағымдағы нәтиже"
+
+#: quiz/models.py:316
+msgid "Complete"
+msgstr "Аяқталды"
+
+#: quiz/models.py:319
+msgid "User Answers"
+msgstr "Пайдаланушы жауаптары"
+
+#: quiz/models.py:321 templates/quiz/sitting_detail.html:27
+msgid "Start"
+msgstr "Бастау"
+
+#: quiz/models.py:322 templates/quiz/sitting_detail.html:28
+msgid "End"
+msgstr "Аяқтау"
+
+#: quiz/models.py:327
+msgid "Can see completed exams."
+msgstr "Аяқталған емтихандарды көре алады."
+#: quiz/models.py:404
+msgid "You have passed this quiz, congratulation"
+msgstr "Сіз бұл тесттен өттіңіз, құттықтаймыз!"
+
+#: quiz/models.py:406
+msgid "You failed this quiz, give it one chance again."
+msgstr "Сіз бұл тесттен өте алмадыңыз, тағы бір рет байқап көріңіз."
+
+#: quiz/models.py:448
+msgid "Figure"
+msgstr "Кескін"
+
+#: quiz/models.py:449
+msgid "Add an image for the question if it's necessary."
+msgstr "Қажет болса, сұраққа сурет қосыңыз."
+
+#: quiz/models.py:454
+msgid "Enter the question text that you want displayed"
+msgstr "Көрсетілетін сұрақ мәтінін енгізіңіз"
+
+#: quiz/models.py:455 quiz/models.py:467 quiz/models.py:522
+#: templates/question.html:125 templates/quiz/sitting_detail.html:34
+msgid "Question"
+msgstr "Сұрақ"
+
+#: quiz/models.py:460
+msgid "Explanation to be shown after the question has been answered."
+msgstr "Сұраққа жауап бергеннен кейін көрсетілетін түсіндірме."
+
+#: quiz/models.py:461 templates/question.html:80 templates/question.html:89
+#: templates/result.html:80 templates/result.html:150
+msgid "Explanation"
+msgstr "Түсіндірме"
+
+#: quiz/models.py:481
+msgid "The order in which multichoice choice options are displayed to the user"
+msgstr "Пайдаланушыға бірнеше таңдау нұсқаларының көрсетілу реті"
+
+#: quiz/models.py:483
+msgid "Choice Order"
+msgstr "Жауап нұсқаларының реті"
+
+#: quiz/models.py:516
+msgid "Multiple Choice Question"
+msgstr "Бірнеше жауап нұсқасы бар сұрақ"
+
+#: quiz/models.py:517
+msgid "Multiple Choice Questions"
+msgstr "Бірнеше жауап нұсқасы бар сұрақтар"
+
+#: quiz/models.py:528
+msgid "Enter the choice text that you want displayed"
+msgstr "Көрсетілетін жауап нұсқасының мәтінін енгізіңіз"
+
+#: quiz/models.py:535
+msgid "Is this a correct answer?"
+msgstr "Бұл дұрыс жауап па?"
+
+#: quiz/models.py:536 templates/quiz/mcquestion_form.html:53
+#: templates/quiz/sitting_detail.html:56
+msgid "Correct"
+msgstr "Дұрыс"
+
+#: quiz/models.py:543
+msgid "Choice"
+msgstr "Жауап нұсқасы"
+
+#: quiz/models.py:544 templates/quiz/mcquestion_form.html:47
+msgid "Choices"
+msgstr "Жауап нұсқалары"
+
+#: quiz/models.py:564
+msgid "Essay style question"
+msgstr "Эссе форматындағы сұрақ"
+
+#: quiz/models.py:565
+msgid "Essay style questions"
+msgstr "Эссе форматындағы сұрақтар"
+
+#: templates/400.html:5
+msgid "Bad request"
+msgstr "Қате сұраныс"
+
+#: templates/400.html:6
+msgid "Please make sure the form is correctly filled."
+msgstr "Форманың дұрыс толтырылғанына көз жеткізіңіз."
+
+#: templates/400.html:7 templates/403.html:7 templates/404.html:7
+#: templates/500.html:7
+msgid "Return to the app"
+msgstr "Қосымшаға оралу"
+
+#: templates/403.html:5
+msgid "forbidden"
+msgstr "Рұқсат жоқ"
+
+#: templates/403.html:6
+msgid "You need the proper permission to make that request."
+msgstr "Бұл сұранысты орындау үшін сізге қажетті рұқсат қажет."
+
+#: templates/404.html:6
+msgid "Looks like the page you"
+msgstr "Сіз іздеген бет"
+
+#: templates/500.html:5
+msgid "Server error"
+msgstr "Сервер қатесі"
+
+#: templates/500.html:6
+msgid "Please try again later."
+msgstr "Кейінірек қайта көріңіз."
+
+
+#: templates/accounts/add_staff.html:3 templates/accounts/add_student.html:3
+#: templates/accounts/edit_lecturer.html:3
+#: templates/accounts/edit_student.html:3
+#: templates/accounts/lecturer_list.html:3
+#: templates/accounts/parent_form.html:3 templates/accounts/profile.html:3
+#: templates/accounts/profile_single.html:3
+#: templates/accounts/student_list.html:3 templates/core/dashboard.html:3
+#: templates/core/index.html:3 templates/core/post_add.html:3
+#: templates/core/semester_list.html:3 templates/core/semester_update.html:3
+#: templates/core/session_list.html:3 templates/core/session_update.html:3
+#: templates/course/course_add.html:3
+#: templates/course/course_allocation_form.html:3
+#: templates/course/course_allocation_view.html:3
+#: templates/course/course_registration.html:3
+#: templates/course/course_single.html:3 templates/course/program_add.html:3
+#: templates/course/program_list.html:3 templates/course/program_single.html:3
+#: templates/course/user_course_list.html:3 templates/progress.html:4
+#: templates/question.html:5 templates/quiz/sitting_detail.html:4
+#: templates/quiz/sitting_list.html:3 templates/result.html:7
+#: templates/result/add_score.html:3 templates/result/add_score_for.html:3
+#: templates/result/assessment_results.html:3
+#: templates/result/grade_results.html:3 templates/search/search_view.html:3
+#: templates/setting/admin_panel.html:3
+#: templates/setting/password_change.html:3
+#: templates/setting/profile_info_change.html:3
+#: templates/upload/upload_file_form.html:3
+#: templates/upload/upload_video_form.html:3
+#: templates/upload/video_single.html:3
+msgid "Learning management system"
+msgstr ""
+
+#: templates/accounts/add_staff.html:11 templates/accounts/add_student.html:12
+#: templates/accounts/edit_lecturer.html:11
+#: templates/accounts/edit_student.html:11
+#: templates/accounts/lecturer_list.html:9 templates/accounts/profile.html:14
+#: templates/accounts/profile_single.html:14
+#: templates/accounts/student_list.html:10 templates/aside.html:47
+#: templates/core/dashboard.html:13 templates/core/index.html:34
+#: templates/core/post_add.html:11 templates/core/semester_list.html:9
+#: templates/core/semester_update.html:11 templates/core/session_list.html:9
+#: templates/core/session_update.html:11 templates/course/course_add.html:11
+#: templates/course/course_allocation_form.html:11
+#: templates/course/course_allocation_view.html:9
+#: templates/course/course_registration.html:12
+#: templates/course/course_single.html:10 templates/course/program_add.html:11
+#: templates/course/program_list.html:9 templates/course/program_single.html:10
+#: templates/course/user_course_list.html:10 templates/progress.html:11
+#: templates/question.html:12 templates/quiz/mcquestion_form.html:9
+#: templates/quiz/quiz_form.html:9 templates/quiz/quiz_list.html:12
+#: templates/quiz/sitting_detail.html:11 templates/quiz/sitting_list.html:9
+#: templates/result.html:14 templates/result/add_score.html:10
+#: templates/result/add_score_for.html:10
+#: templates/result/assessment_results.html:9
+#: templates/result/grade_results.html:9 templates/search/search_view.html:11
+#: templates/setting/admin_panel.html:11
+#: templates/setting/password_change.html:11
+#: templates/setting/profile_info_change.html:11
+#: templates/upload/upload_file_form.html:10
+#: templates/upload/upload_video_form.html:10
+#: templates/upload/video_single.html:10
+msgid "Home"
+msgstr ""
+
+#: templates/accounts/add_staff.html:12
+#: templates/accounts/edit_lecturer.html:12
+#: templates/accounts/lecturer_list.html:10
+#: templates/accounts/lecturer_list.html:21 templates/aside.html:58
+#: templates/core/dashboard.html:63 templates/pdf/lecturer_list.html:35
+#: templates/setting/admin_panel.html:37
+msgid "Lecturers"
+msgstr "Оқытушылар"
+
+#: templates/accounts/add_staff.html:13 templates/accounts/add_student.html:14
+#: templates/aside.html:113
+msgid "Add"
+msgstr "Қосу"
+
+#: templates/accounts/add_staff.html:17
+msgid "Lecturer Add Form"
+msgstr "Оқытушыны қосу формасы"
+
+#: templates/accounts/add_staff.html:26 templates/accounts/add_student.html:27
+#: templates/accounts/edit_lecturer.html:27
+#: templates/accounts/edit_student.html:25 templates/accounts/profile.html:75
+#: templates/accounts/profile_single.html:88
+#: templates/pdf/profile_single.html:65 templates/registration/register.html:40
+#: templates/setting/profile_info_change.html:24
+msgid "Personal Info"
+msgstr "Жеке ақпарат"
+
+#: templates/accounts/add_staff.html:37 templates/accounts/add_student.html:49
+#: templates/accounts/edit_lecturer.html:46
+#: templates/accounts/edit_student.html:46
+#: templates/accounts/parent_form.html:11 templates/core/post_add.html:25
+#: templates/core/semester_update.html:38 templates/core/session_update.html:38
+#: templates/course/course_add.html:49
+#: templates/course/course_allocation_form.html:49
+#: templates/course/program_add.html:26 templates/quiz/mcquestion_form.html:67
+#: templates/quiz/quiz_form.html:66 templates/result/add_score_for.html:38
+msgid "Save"
+msgstr "Сақтау"
+
+#: templates/accounts/add_student.html:13
+#: templates/accounts/edit_student.html:12
+#: templates/accounts/student_list.html:11
+#: templates/accounts/student_list.html:24 templates/aside.html:61
+#: templates/core/dashboard.html:54 templates/pdf/student_list.html:35
+#: templates/setting/admin_panel.html:42
+msgid "Students"
+msgstr "Студенттер"
+
+#: templates/accounts/add_student.html:18
+msgid "Student Add Form"
+msgstr "Студентті қосу формасы"
+
+#: templates/accounts/add_student.html:40
+#: templates/accounts/edit_lecturer.html:39
+#: templates/accounts/edit_student.html:39 templates/core/dashboard.html:117
+#: templates/setting/profile_info_change.html:37
+msgid "Others"
+msgstr "Басқа"
+
+#: templates/accounts/edit_lecturer.html:13
+#: templates/accounts/edit_student.html:13
+#: templates/accounts/lecturer_list.html:59
+#: templates/accounts/student_list.html:61
+#: templates/course/program_list.html:56
+msgid "Update"
+msgstr "Жаңарту"
+
+#: templates/accounts/edit_lecturer.html:17
+msgid "Lecturer Update Form"
+msgstr "Оқытушыны жаңарту формасы"
+
+#: templates/accounts/edit_lecturer.html:27
+#: templates/accounts/edit_student.html:25
+#: templates/accounts/lecturer_list.html:33
+#: templates/accounts/profile_single.html:107
+#: templates/accounts/student_list.html:38 templates/pdf/lecturer_list.html:44
+#: templates/pdf/student_list.html:43
+#: templates/registration/password_reset.html:13
+#: templates/setting/profile_info_change.html:24
+msgid "Email"
+msgstr "Электрондық пошта"
+#: templates/accounts/edit_student.html:17
+msgid "Student Update Form"
+msgstr "Студентті жаңарту формасы"
+
+#: templates/accounts/lecturer_list.html:16
+msgid "Add Lecturer"
+msgstr "Оқытушыны қосу"
+
+#: templates/accounts/lecturer_list.html:17
+#: templates/accounts/student_list.html:20
+msgid "Download pdf"
+msgstr "PDF жүктеу"
+
+#: templates/accounts/lecturer_list.html:31
+#: templates/accounts/profile_single.html:92
+#: templates/accounts/student_list.html:36 templates/pdf/lecturer_list.html:42
+#: templates/pdf/student_list.html:41
+msgid "ID No."
+msgstr "Куәлік нөмірі"
+
+#: templates/accounts/lecturer_list.html:32
+#: templates/accounts/student_list.html:37 templates/pdf/lecturer_list.html:43
+#: templates/pdf/student_list.html:42
+msgid "Full Name"
+msgstr "Толық аты-жөні"
+
+#: templates/accounts/lecturer_list.html:34 templates/pdf/lecturer_list.html:45
+#: templates/pdf/student_list.html:44
+msgid "Mob No."
+msgstr "Телефон нөмірі"
+
+#: templates/accounts/lecturer_list.html:35
+#: templates/accounts/profile_single.html:109
+msgid "Address/city"
+msgstr "Мекенжай/қала"
+
+#: templates/accounts/lecturer_list.html:36
+#: templates/accounts/profile_single.html:29
+#: templates/accounts/profile_single.html:115
+msgid "Last login"
+msgstr "Соңғы кіру"
+
+#: templates/accounts/lecturer_list.html:38
+#: templates/accounts/student_list.html:41
+#: templates/course/course_allocation_view.html:35
+#: templates/course/program_list.html:35
+#: templates/course/program_single.html:47
+msgid "Action"
+msgstr "Әрекет"
+
+#: templates/accounts/lecturer_list.html:60
+#: templates/accounts/student_list.html:62
+msgid "Download PDF"
+msgstr "PDF жүктеу"
+
+#: templates/accounts/lecturer_list.html:61
+#: templates/accounts/student_list.html:63 templates/core/index.html:78
+#: templates/core/semester_list.html:71 templates/core/session_list.html:66
+#: templates/course/course_single.html:91
+#: templates/course/course_single.html:168
+#: templates/course/program_list.html:57
+#: templates/course/program_single.html:81
+#: templates/quiz/mcquestion_form.html:57 templates/quiz/quiz_list.html:68
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr "Жою"
+#: templates/accounts/lecturer_list.html:71 templates/pdf/lecturer_list.html:63
+#: templates/pdf/student_list.html:61
+msgid "No Lecturer(s)."
+msgstr "Оқытушылар жоқ"
+
+#: templates/accounts/lecturer_list.html:75
+msgid "Add Lecturer Now."
+msgstr "Оқытушыны қосу"
+
+#: templates/accounts/profile.html:29 templates/accounts/profile.html:101
+#: templates/navbar.html:29 templates/pdf/profile_single.html:41
+#: templates/pdf/profile_single.html:92
+msgid "Last login:"
+msgstr "Соңғы кіру:"
+
+#: templates/accounts/profile.html:30 templates/pdf/profile_single.html:42
+msgid "Role:"
+msgstr "Рөл:"
+
+#: templates/accounts/profile.html:37 templates/accounts/profile_single.html:40
+#: templates/accounts/profile_single.html:48
+msgid "Edit Profile"
+msgstr "Профильді өзгерту"
+
+#: templates/accounts/profile.html:39
+msgid "Change password"
+msgstr "Құпия сөзді өзгерту"
+
+#: templates/accounts/profile.html:62 templates/accounts/profile_single.html:75
+#: templates/aside.html:67 templates/course/user_course_list.html:3
+#: templates/course/user_course_list.html:11
+#: templates/course/user_course_list.html:23 templates/navbar.html:34
+#: templates/pdf/profile_single.html:52
+msgid "My Courses"
+msgstr "Менің курстарым"
+
+#: templates/accounts/profile.html:70 templates/accounts/profile_single.html:83
+#: templates/pdf/profile_single.html:60
+msgid "No courses assigned!"
+msgstr "Курстар тағайындалмаған!"
+
+#: templates/accounts/profile.html:77 templates/pdf/profile_single.html:67
+msgid "First Name:"
+msgstr "Аты:"
+
+#: templates/accounts/profile.html:78 templates/pdf/profile_single.html:68
+msgid "Last Name:"
+msgstr "Тегі:"
+
+#: templates/accounts/profile.html:79 templates/pdf/profile_single.html:69
+msgid "ID No.:"
+msgstr "ID нөмірі:"
+
+#: templates/accounts/profile.html:83 templates/accounts/profile_single.html:96
+#: templates/pdf/profile_single.html:74
+msgid "Applicant Info"
+msgstr "Өтініш берушінің мәліметтері"
+
+#: templates/accounts/profile.html:85 templates/pdf/profile_single.html:76
+msgid "School:"
+msgstr "Факультет:"
+
+#: templates/accounts/profile.html:85 templates/pdf/profile_single.html:76
+msgid "Hawas Preparatory School"
+msgstr "Дайындық мектебі"
+
+#: templates/accounts/profile.html:86 templates/pdf/profile_single.html:77
+msgid "Level:"
+msgstr "Білім деңгейі:"
+
+#: templates/accounts/profile.html:91
+#: templates/accounts/profile_single.html:105
+#: templates/pdf/profile_single.html:82
+msgid "Contact Info"
+msgstr "Байланыс ақпараты"
+
+#: templates/accounts/profile.html:93 templates/pdf/profile_single.html:84
+msgid "Email:"
+msgstr "Электрондық пошта:"
+
+#: templates/accounts/profile.html:94 templates/pdf/profile_single.html:85
+msgid "Tel No.:"
+msgstr "Телефон нөмірі:"
+
+#: templates/accounts/profile.html:95 templates/pdf/profile_single.html:86
+msgid "Address/city:"
+msgstr "Мекенжай/қала:"
+
+#: templates/accounts/profile.html:99
+#: templates/accounts/profile_single.html:113
+#: templates/pdf/profile_single.html:90
+msgid "Important Dates"
+msgstr "Маңызды күндер"
+
+#: templates/accounts/profile.html:103 templates/pdf/profile_single.html:94
+msgid "Academic Year:"
+msgstr "Академиялық жыл:"
+
+#: templates/accounts/profile.html:103
+#: templates/accounts/profile_single.html:117
+#: templates/core/semester_list.html:41 templates/course/program_single.html:44
+#: templates/course/user_course_list.html:52
+#: templates/course/user_course_list.html:96
+#: templates/pdf/profile_single.html:94 templates/result/add_score.html:24
+#: templates/result/add_score_for.html:46 templates/setting/admin_panel.html:52
+msgid "Semester"
+msgstr "Семестр"
+
+#: templates/accounts/profile.html:105 templates/pdf/profile_single.html:96
+msgid "Registered Date:"
+msgstr "Тіркелген күні:"
+
+#: templates/accounts/profile_single.html:30
+msgid "Role"
+msgstr "Рөл"
+
+#: templates/accounts/profile_single.html:43
+msgid "Change Program"
+msgstr "Бағдарламаны өзгерту"
+
+#: templates/accounts/profile_single.html:90
+msgid "First Name"
+msgstr "Аты"
+#: templates/accounts/profile_single.html:91
+msgid "Last Name"
+msgstr "Тегі"
+
+#: templates/accounts/profile_single.html:98
+msgid "School"
+msgstr "Факультет"
+
+#: templates/accounts/profile_single.html:99
+#: templates/course/program_single.html:42
+msgid "Level"
+msgstr "Білім деңгейі"
+
+#: templates/accounts/profile_single.html:100
+#: templates/accounts/student_list.html:39 templates/pdf/student_list.html:45
+#: templates/search/search_view.html:49 templates/search/search_view.html:89
+#: templates/search/search_view.html:124
+msgid "Program"
+msgstr "Бағдарлама"
+
+#: templates/accounts/profile_single.html:108
+msgid "Tel No."
+msgstr "Телефон нөмірі"
+
+#: templates/accounts/profile_single.html:117
+msgid "Academic Year"
+msgstr "Академиялық жыл"
+
+#: templates/accounts/profile_single.html:119
+msgid "Registered Date"
+msgstr "Тіркелген күні"
+
+#: templates/accounts/student_list.html:19
+msgid "Add Student"
+msgstr "Студент қосу"
+
+#: templates/accounts/student_list.html:73
+#: templates/result/add_score_for.html:105
+msgid "No Student."
+msgstr "Студенттер жоқ."
+
+#: templates/accounts/student_list.html:77
+msgid "Add Student Now."
+msgstr "Қазір студент қосу."
+
+#: templates/aside.html:43 templates/core/dashboard.html:3
+#: templates/core/dashboard.html:14 templates/core/dashboard.html:33
+msgid "Dashboard"
+msgstr "Басқару панелі"
+
+#: templates/aside.html:50 templates/navbar.html:41
+msgid "Profile"
+msgstr "Профиль"
+
+#: templates/aside.html:55 templates/navbar.html:38
+#: templates/setting/admin_panel.html:12 templates/setting/admin_panel.html:16
+msgid "Admin Panel"
+msgstr "Әкімшілік панелі"
+
+#: templates/aside.html:72
+msgid "Programs & Courses"
+msgstr "Бағдарламалар мен курстар"
+
+#: templates/aside.html:77 templates/quiz/sitting_list.html:10
+msgid "Complete Exams"
+msgstr "Аяқталған емтихандар"
+
+#: templates/aside.html:83 templates/aside.html:104
+msgid "Quiz Progress Rec"
+msgstr "Викторина прогресі"
+
+#: templates/aside.html:86
+msgid "Course Allocation"
+msgstr "Курсты бөлу"
+
+#: templates/aside.html:89
+msgid "Manage Session"
+msgstr "Сессияны басқару"
+
+#: templates/aside.html:92
+msgid "Manage Semester"
+msgstr "Семестрді басқару"
+
+#: templates/aside.html:98 templates/result/add_score.html:11
+#: templates/result/add_score.html:17 templates/result/add_score_for.html:12
+msgid "Manage Score"
+msgstr "Бағаларды басқару"
+
+#: templates/aside.html:107 templates/result/grade_results.html:10
+#: templates/result/grade_results.html:28
+msgid "Grade Results"
+msgstr "Баға нәтижелері"
+
+#: templates/aside.html:110 templates/result/assessment_results.html:10
+#: templates/result/assessment_results.html:28
+msgid "Assesment Results"
+msgstr "Бағалау нәтижелері"
+
+#: templates/aside.html:113
+msgid "Drop Course"
+msgstr "Курстан бас тарту"
+
+#: templates/aside.html:119
+msgid "Account Setting"
+msgstr "Аккаунт баптаулары"
+#: templates/aside.html:122 templates/setting/password_change.html:21
+#: templates/setting/password_change.html:25
+msgid "Change Password"
+msgstr "Құпиясөзді өзгерту"
+
+#: templates/aside.html:130
+msgid "Read our"
+msgstr "Біздің"
+
+#: templates/aside.html:130
+msgid "Privacy"
+msgstr "Құпиялылық саясатымызды оқыңыз"
+
+#: templates/aside.html:130
+#: venv/lib/python3.9/site-packages/django/db/models/base.py:1423
+#: venv/lib/python3.9/site-packages/django/forms/models.py:893
+msgid "and"
+msgstr "және"
+
+#: templates/aside.html:130
+msgid "Terms of use."
+msgstr "Пайдалану шарттарын оқыңыз."
+
+#: templates/aside.html:135
+msgid "⭐️ Star This Project"
+msgstr "⭐️ Осы жобаны бағалаңыз"
+
+#: templates/core/dashboard.html:40
+msgid "Dashboard settings"
+msgstr "Басқару панелінің баптаулары"
+
+#: templates/core/dashboard.html:41
+msgid "Display grid"
+msgstr "Тор ретінде көрсету"
+
+#: templates/core/dashboard.html:42
+msgid "Display table"
+msgstr "Кесте ретінде көрсету"
+
+#: templates/core/dashboard.html:44
+msgid "Manage dashboard"
+msgstr "Басқару панелін басқару"
+
+#: templates/core/dashboard.html:72
+msgid "Administrators"
+msgstr "Әкімшілер"
+
+#: templates/core/dashboard.html:81
+msgid "Lab Assistance"
+msgstr "Лаборатория көмекшілері"
+
+#: templates/core/dashboard.html:90
+msgid "Librarians"
+msgstr "Кітапханашылар"
+
+#: templates/core/dashboard.html:99
+msgid "Supervisors"
+msgstr "Кураторлар"
+
+#: templates/core/dashboard.html:108
+msgid "Office Assistance"
+msgstr "Кеңсе көмекшілері"
+
+#: templates/core/dashboard.html:145
+msgid "Latest activities"
+msgstr "Соңғы әрекеттер"
+
+#: templates/core/dashboard.html:150
+msgid "No recent activity"
+msgstr "Соңғы әрекеттер жоқ"
+
+#: templates/core/dashboard.html:158
+msgid "School Demographics"
+msgstr "Мектеп демографиясы"
+
+#: templates/core/index.html:40
+msgid "Add New Post"
+msgstr "Жаңа жазба қосу"
+
+#: templates/core/index.html:47 templates/core/index.html:55
+#: templates/setting/admin_panel.html:80 templates/setting/admin_panel.html:81
+msgid "Events"
+msgstr "Оқиғалар"
+
+#: templates/core/index.html:65
+msgid "news"
+msgstr "жаңалықтар"
+#: templates/core/index.html:65
+msgid "events"
+msgstr "оқиғалар"
+
+#: templates/core/index.html:76 templates/core/semester_list.html:69
+#: templates/core/session_list.html:65 templates/course/course_single.html:87
+#: templates/course/course_single.html:164
+#: templates/course/program_single.html:78 templates/quiz/quiz_list.html:65
+msgid "Edit"
+msgstr "Өңдеу"
+
+#: templates/core/index.html:88 templates/upload/video_single.html:31
+msgid "ago"
+msgstr "бұрын"
+
+#: templates/core/index.html:98
+msgid "School news and events will appear here."
+msgstr "Мектеп жаңалықтары мен оқиғалары осында көрсетіледі."
+
+#: templates/core/post_add.html:12
+msgid "Post form"
+msgstr "Жазба формасы"
+
+#: templates/core/post_add.html:21
+msgid "Post Form"
+msgstr "Жазба формасы"
+
+#: templates/core/post_add.html:26 templates/upload/upload_file_form.html:34
+#: templates/upload/upload_video_form.html:33
+msgid "Cancel"
+msgstr "Болдырмау"
+
+#: templates/core/semester_list.html:10
+msgid "Semester list"
+msgstr "Семестрлер тізімі"
+
+#: templates/core/semester_list.html:16
+msgid "Add New Semester"
+msgstr "Жаңа семестр қосу"
+
+#: templates/core/semester_list.html:20 templates/core/semester_update.html:12
+msgid "Semester List"
+msgstr "Семестрлер тізімі"
+
+#: templates/core/semester_list.html:42
+msgid "Is Current semester"
+msgstr "Ағымдағы семестр"
+
+#: templates/core/semester_list.html:43 templates/core/session_list.html:41
+#: templates/setting/admin_panel.html:47
+msgid "Session"
+msgstr "Сессия"
+
+#: templates/core/semester_list.html:44
+msgid "Next Semester Begins"
+msgstr "Келесі семестрдің басталуы"
+#: templates/core/semester_list.html:46 templates/core/session_list.html:45
+#: templates/course/course_single.html:61
+#: templates/course/course_single.html:138
+msgid "Actions"
+msgstr "Әрекеттер"
+
+#: templates/core/semester_list.html:83
+msgid "No Semester."
+msgstr "Семестр жоқ."
+
+#: templates/core/semester_list.html:87
+msgid "Add Semester Now."
+msgstr "Семестрді қазір қосыңыз."
+
+#: templates/core/semester_update.html:13
+msgid "Semester Form"
+msgstr "Семестр формасы"
+
+#: templates/core/semester_update.html:34
+msgid "Semester Add & update Form"
+msgstr "Семестрді қосу және жаңарту формасы"
+
+#: templates/core/session_list.html:10 templates/core/session_list.html:20
+#: templates/core/session_update.html:12
+msgid "Session List"
+msgstr "Сессиялар тізімі"
+
+#: templates/core/session_list.html:16
+msgid "Add New Session"
+msgstr "Жаңа сессия қосу"
+
+#: templates/core/session_list.html:42
+msgid "Is Current Session"
+msgstr "Ағымдағы сессия"
+
+#: templates/core/session_list.html:43
+msgid "Next Session Begins"
+msgstr "Келесі сессияның басталуы"
+
+#: templates/core/session_list.html:77
+msgid "No Session."
+msgstr "Сессия жоқ."
+
+#: templates/core/session_list.html:81
+msgid "Add Session Now."
+msgstr "Сессияны қазір қосыңыз."
+
+#: templates/core/session_update.html:13
+msgid "Session Form"
+msgstr "Сессия формасы"
+
+#: templates/core/session_update.html:34
+msgid "Session Add & update Form"
+msgstr "Сессияны қосу және жаңарту формасы"
+
+#: templates/correct_answer.html:6 templates/question.html:50
+#: templates/result.html:51
+msgid "You answered the above question incorrectly"
+msgstr "Сіз жоғарыдағы сұраққа қате жауап бердіңіз"
+
+#: templates/correct_answer.html:16 templates/question.html:60
+#: templates/result.html:61
+msgid "This is the correct answer"
+msgstr "Бұл дұрыс жауап"
+
+#: templates/correct_answer.html:24 templates/question.html:68
+#: templates/result.html:69
+msgid "This was your answer."
+msgstr "Бұл сіздің жауабыңыз болды."
+
+#: templates/course/course_add.html:12 templates/course/course_single.html:11
+#: templates/course/program_add.html:12 templates/course/program_list.html:10
+#: templates/course/program_single.html:11
+#: templates/quiz/mcquestion_form.html:10 templates/quiz/quiz_form.html:10
+#: templates/quiz/quiz_list.html:13 templates/result.html:15
+#: templates/setting/admin_panel.html:70
+#: templates/upload/upload_file_form.html:11
+#: templates/upload/upload_video_form.html:11
+#: templates/upload/video_single.html:11
+msgid "Programs"
+msgstr "Бағдарламалар"
+
+#: templates/course/course_add.html:13 templates/course/course_add.html:17
+msgid "Course Form"
+msgstr "Курс формасы"
+
+#: templates/course/course_add.html:27
+msgid "Course Detail"
+msgstr "Курс мәліметтері"
+
+#: templates/course/course_add.html:37
+msgid "Other Info"
+msgstr "Қосымша ақпарат"
+
+#: templates/course/course_allocation_form.html:12
+#: templates/course/course_allocation_view.html:20
+#: templates/setting/admin_panel.html:75
+msgid "Course Allocations"
+msgstr "Курстарды бөлу"
+
+#: templates/course/course_allocation_form.html:13
+msgid "Allocation Form"
+msgstr "Бөлу формасы"
+
+#: templates/course/course_allocation_form.html:34
+msgid "Course Allocation Form"
+msgstr "Курсты бөлу формасы"
+
+#: templates/course/course_allocation_view.html:10
+msgid "Allocation list"
+msgstr "Бөлу тізімі"
+
+#: templates/course/course_allocation_view.html:16
+msgid "Allocate Now"
+msgstr "Қазір бөлу"
+
+#: templates/course/course_allocation_view.html:33
+#: templates/setting/admin_panel.html:70
+msgid "Courses"
+msgstr "Курстар"
+
+#: templates/course/course_allocation_view.html:50
+msgid "Edit or Update"
+msgstr "Өңдеу немесе жаңарту"
+
+#: templates/course/course_allocation_view.html:53
+msgid "Deallocate"
+msgstr "Босату"
+
+#: templates/course/course_allocation_view.html:65
+msgid "No Course Allocated."
+msgstr "Курс бөлінбеген."
+
+#: templates/course/course_allocation_view.html:69
+msgid "Allocate now"
+msgstr "Қазір бөлу"
+
+#: templates/course/course_registration.html:13
+msgid "Course Registration"
+msgstr "Курсты тіркеу"
+
+#: templates/course/course_registration.html:17
+#: templates/course/course_registration.html:35
+#: templates/setting/admin_panel.html:58
+msgid "Course Add"
+msgstr "Курс қосу"
+
+#: templates/course/course_registration.html:17
+#: templates/setting/admin_panel.html:58
+msgid "Drop"
+msgstr "Жою"
+
+#: templates/course/course_registration.html:25
+msgid "Calender is off"
+msgstr "Күнтізбе өшірілген"
+
+#: templates/course/course_registration.html:26
+msgid "Check the university calender"
+msgstr "Университет күнтізбесін тексеріңіз"
+
+#: templates/course/course_registration.html:38
+#: templates/course/course_registration.html:200
+msgid "Save Score"
+msgstr "Бағаны сақтау"
+
+msgid "First Semester:"
+msgstr "Бірінші семестр:"
+
+msgid "Mark"
+msgstr "Баға"
+
+msgid "Course Code"
+msgstr "Курс коды"
+
+msgid "Course Title"
+msgstr "Курс атауы"
+
+msgid "Cr.Hr(s)"
+msgstr "Кредит сағаттары"
+
+msgid "Year"
+msgstr "Жыл"
+
+msgid "Classification"
+msgstr "Классификация"
+
+msgid "Elective Group"
+msgstr "Элективтік топ"
+
+msgid "Elective"
+msgstr "Элективтік"
+msgid "Core"
+msgstr "Міндетті"
+
+msgid "No Course."
+msgstr "Курс жоқ."
+
+msgid "First semester Credit(s):"
+msgstr "Бірінші семестр кредиттері:"
+
+msgid "Second Semester:"
+msgstr "Екінші семестр:"
+
+msgid "Second semester credit(s):"
+msgstr "Екінші семестр кредиттері:"
+
+msgid "Registerd course credit(s):"
+msgstr "Тіркелген курс кредиттері:"
+
+msgid "Total credit(s):"
+msgstr "Жалпы кредит саны:"
+
+msgid "Print Registration Form"
+msgstr "Тіркеу формасын басып шығару"
+
+msgid "Print Registerd Courses"
+msgstr "Тіркелген курстарды басып шығару"
+
+msgid "Course Drop"
+msgstr "Курсты алып тастау"
+
+msgid "Drop Selected"
+msgstr "Таңдалғанын жою"
+
+msgid "Edit course"
+msgstr "Курсты өңдеу"
+
+msgid "Upload new file"
+msgstr "Жаңа файл жүктеу"
+
+msgid "Upload new video"
+msgstr "Жаңа видео жүктеу"
+
+msgid "Take a Quiz"
+msgstr "Тест тапсыру"
+
+msgid "Video Tutorials"
+msgstr "Бейнесабақтар"
+
+msgid "Video Title"
+msgstr "Видео атауы"
+
+msgid "Uploaded Date"
+msgstr "Жүктелген күні"
+
+msgid "Get Started"
+msgstr "Бастау"
+
+msgid "Play now"
+msgstr "Қазір қарау"
+
+msgid "No video Uploaded."
+msgstr "Видео жүктелмеген."
+
+msgid "Upload now."
+msgstr "Қазір жүктеңіз."
+
+msgid "Documentations"
+msgstr "Құжаттар"
+
+msgid "File name"
+msgstr "Файл атауы"
+
+msgid "Updated Date"
+msgstr "Жаңарту күні"
+
+msgid "Downloads"
+msgstr "Жүктеулер"
+
+msgid "Download"
+msgstr "Жүктеу"
+
+msgid "No File Uploaded."
+msgstr "Файлдар жүктелмеген."
+
+msgid "Lecturer(s)"
+msgstr "Оқытушы(лар)"
+
+msgid "No lecturer assigned for this course"
+msgstr "Бұл курсқа оқытушы тағайындалмаған"
+
+msgid "Program Form"
+msgstr "Бағдарлама формасы"
+
+msgid "Program Add Form"
+msgstr "Бағдарлама қосу формасы"
+
+msgid "Add Program"
+msgstr "Бағдарлама қосу"
+
+msgid "Program List"
+msgstr "Бағдарламалар тізімі"
+
+msgid "Program Name"
+msgstr "Бағдарлама атауы"
+
+msgid "Summary"
+msgstr "Қысқаша сипаттама"
+
+msgid "No program."
+msgstr "Бағдарламалар жоқ."
+
+msgid "Add program now."
+msgstr "Қазір бағдарлама қосыңыз."
+
+msgid "Add Course"
+msgstr "Курс қосу"
+
+msgid "Course Name"
+msgstr "Курс атауы"
+
+msgid "Cr.Hr"
+msgstr "Кредиттік сағат"
+msgid "Current Semester"
+msgstr "Ағымдағы семестр"
+
+msgid "No course for this progrm."
+msgstr "Бұл бағдарламаға курс қосылмаған."
+
+msgid "Add one now."
+msgstr "Қазір қосыңыз."
+
+msgid "Taken Courses:"
+msgstr "Өтілген курстар:"
+
+msgid "Taken"
+msgstr "Өтілді"
+
+msgid "All Courses:"
+msgstr "Барлық курстар:"
+
+msgid "Invoices"
+msgstr "Шоттар"
+
+msgid "Pay now"
+msgstr "Қазір төлеу"
+
+msgid "Search All... #course, #program, #Quiz, #News, #Events"
+msgstr "Барлығын іздеу... #курс, #бағдарлама, #викторина, #жаңалықтар, #оқиғалар"
+
+msgid "Setting"
+msgstr "Параметрлер"
+
+msgid "Signout"
+msgstr "Шығу"
+
+msgid "Payment Succeed, You has been make payment successfuly."
+msgstr "Төлем сәтті аяқталды."
+
+msgid "Redirect to your dashboard in"
+msgstr "Сізді басқару тақтасына қайта бағыттау"
+
+msgid "Coinbase"
+msgstr "Coinbase"
+
+msgid "Address/City"
+msgstr "Мекенжай/Қала"
+
+msgid "Progress Page"
+msgstr "Прогресс беті"
+
+msgid "User Progress Page"
+msgstr "Пайдаланушы прогрессі беті"
+
+msgid "Question Category Scores"
+msgstr "Сұрақтар санаты бойынша баллдар"
+
+msgid "Category"
+msgstr "Санат"
+
+msgid "Correctly answererd"
+msgstr "Дұрыс жауаптар"
+
+msgid "Incorrect"
+msgstr "Қате"
+
+msgid "Previous exam papers"
+msgstr "Алдыңғы емтихан жұмыстары"
+
+msgid "Below are the results of exams that you have sat."
+msgstr "Төменде сіз тапсырған емтихандардың нәтижелері берілген."
+
+msgid "Total complete exams:"
+msgstr "Толық аяқталған емтихандар саны:"
+
+msgid "Quiz Title"
+msgstr "Тест атауы"
+
+msgid "Possible Score"
+msgstr "Ең жоғары балл"
+
+msgid "Out of 100%%"
+msgstr "100%% ішінен"
+
+msgid "No recordes yet. Try to do some quizzes in your course."
+msgstr "Әзірге жазбалар жоқ. Курсыңыздағы тестілерді өтіп көріңіз."
+
+msgid "The previous question"
+msgstr "Алдыңғы сұрақ"
+
+msgid "Your answer was"
+msgstr "Сіздің жауабыңыз"
+
+msgid "No explanation set to this question."
+msgstr "Бұл сұраққа түсініктеме берілмеген."
+
+msgid "Quiz instractions"
+msgstr "Тест нұсқаулығы"
+
+msgid "Understood"
+msgstr "Түсінікті"
+
+msgid "of"
+msgstr "ішінен"
+
+msgid "Quiz category"
+msgstr "Тест санаты"
+
+msgid "Previous"
+msgstr "Алдыңғы"
+
+msgid "MC Question Form"
+msgstr "Көп таңдаулы сұрақ формасы"
+
+msgid "Add questions"
+msgstr "Сұрақтар қосу"
+
+msgid "question added"
+msgstr "сұрақ қосылды"
+
+msgid "Correct the error(s) below."
+msgstr "Төмендегі қатені (қателерді) түзетіңіз."
+
+msgid "Quiz Form"
+msgstr "Тест формасы"
+
+msgid "Quiz form for"
+msgstr "Тест формасы үшін"
+
+msgid "Hold down"
+msgstr "Басып тұрыңыз"
+
+msgid "or"
+msgstr "немесе"
+
+msgid "on a Mac, to select more than one."
+msgstr "Mac-та бірнешеуін таңдау үшін."
+
+msgid "Continue"
+msgstr "Жалғастыру"
+
+msgid "Add Quiz"
+msgstr "Тест қосу"
+
+msgid "You will only get one attempt at this quiz"
+msgstr "Бұл тестті бір рет қана тапсыра аласыз"
+
+msgid "Start quiz"
+msgstr "Тестті бастау"
+
+msgid "Result of"
+msgstr "Нәтиже"
+
+msgid "for"
+msgstr "үшін"
+msgid "Completed Exams"
+msgstr "Аяқталған емтихандар"
+
+msgid "Marking"
+msgstr "Бағалау"
+
+msgid "Quiz title"
+msgstr "Тест атауы"
+
+msgid "Completed"
+msgstr "Аяқталды"
+
+msgid "User answer"
+msgstr "Пайдаланушының жауабы"
+
+msgid "incorrect"
+msgstr "дұрыс емес"
+
+msgid "Toggle whether correct"
+msgstr "Жауаптың дұрыстығын өзгерту"
+
+msgid "All Quizzes"
+msgstr "Барлық тесттер"
+
+msgid "List of complete exams"
+msgstr "Аяқталған емтихандар тізімі"
+
+msgid "Filter"
+msgstr "Сүзгі"
+
+msgid "View details"
+msgstr "Толығырақ көру"
+
+msgid "No completed exams for you"
+msgstr "Сізде аяқталған емтихандар жоқ"
+
+msgid "Dj Learning Management System - Login"
+msgstr "Dj Оқу басқару жүйесі - Кіру"
+
+msgid "Sign in"
+msgstr "Кіру"
+
+msgid "ID Number"
+msgstr "Идентификациялық нөмір"
+
+msgid "Password"
+msgstr "Құпия сөз"
+
+msgid "Invalid ID & Password."
+msgstr "Қате ID немесе құпия сөз."
+
+msgid "SIGN IN"
+msgstr "КІРУ"
+
+msgid "Forgot password ?"
+msgstr "Құпия сөзді ұмыттыңыз ба?"
+
+msgid "Password Reset | Learning management system"
+msgstr "Құпия сөзді қалпына келтіру | Оқу басқару жүйесі"
+
+msgid "Password Reset"
+msgstr "Құпия сөзді қалпына келтіру"
+
+msgid "Request Password Reset"
+msgstr "Құпия сөзді қалпына келтіруді сұрау"
+
+msgid "Password Reset Complete | Learning management system"
+msgstr "Құпия сөзді қалпына келтіру аяқталды | Оқу басқару жүйесі"
+
+msgid "Password Reset Complete"
+msgstr "Құпия сөзді қалпына келтіру аяқталды"
+
+msgid "Your password has been set, you are now able to Log In!"
+msgstr "Құпия сөзіңіз орнатылды, енді кіруге болады!"
+
+msgid "Sign In Here"
+msgstr "Осы жерден кіру"
+
+msgid "Confirm New Password"
+msgstr "Жаңа құпия сөзді растаңыз"
+msgid "Reset Password"
+msgstr "Құпия сөзді қалпына келтіру"
+
+msgid "Email Sent | Learning management system"
+msgstr "Электрондық хат жіберілді | Оқу басқару жүйесі"
+
+msgid "Email sent"
+msgstr "Электрондық хат жіберілді"
+
+msgid "Back To Login"
+msgstr "Кіруге оралу"
+
+msgid "Register | Learning management system"
+msgstr "Тіркелу | Оқу басқару жүйесі"
+
+msgid "Create Your Account"
+msgstr "Есептік жазбаңызды жасаңыз"
+
+msgid "Login Form"
+msgstr "Кіру формасы"
+
+msgid "SIGN UP"
+msgstr "ТІРКЕЛУ"
+
+msgid "Already Registered ?"
+msgstr "Тіркелгенсіз бе?"
+
+msgid "Login"
+msgstr "Кіру"
+
+msgid "Quiz Results for"
+msgstr "Тест нәтижелері"
+
+msgid "Result"
+msgstr "Нәтиже"
+
+msgid "Calculating your result..."
+msgstr "Нәтиже есептелуде..."
+
+msgid "Quiz result"
+msgstr "Тест нәтижесі"
+
+msgid "You answered"
+msgstr "Сіз жауап бердіңіз"
+
+msgid "questions correctly out of"
+msgstr "сұраққа дұрыс жауап бердіңіз, барлығы"
+
+msgid "giving you"
+msgstr "сізге береді"
+
+msgid "%% correct"
+msgstr "%% дұрыс"
+
+msgid "Review the questions below and try the quiz again in the future"
+msgstr "Төмендегі сұрақтарды қарап шығыңыз және тестті кейінірек қайта өтіңіз"
+
+msgid "The result of this quiz will be stored in your progress section"
+msgstr "Бұл тесттің нәтижесі сіздің прогресс бөлімінде сақталады"
+
+msgid "so you can review and monitor your progression"
+msgstr "осылайша сіз өзіңіздің жетістігіңізді қадағалай аласыз"
+
+msgid "Your session score is"
+msgstr "Сессиядағы нәтижеңіз"
+
+msgid "out of a possible"
+msgstr "мүмкін болатын"
+
+msgid "No explanation set for this question."
+msgstr "Бұл сұраққа түсініктеме берілмеген."
+
+msgid "Your answer"
+msgstr "Сіздің жауабыңыз"
+
+msgid "Select Your Course Here"
+msgstr "Осы жерден курсыңызды таңдаңыз"
+
+msgid "No course."
+msgstr "Курс жоқ."
+
+msgid "To manage scores, please select the course using the button above."
+msgstr "Бағаларды басқару үшін жоғарыдағы батырманы пайдаланып курсты таңдаңыз."
+msgid "Students result form"
+msgstr "Студенттердің нәтиже формасы"
+
+msgid "Grade report"
+msgstr "Баға есебі"
+
+msgid "Mid exam"
+msgstr "Аралық емтихан"
+
+msgid "Attendance"
+msgstr "Қатысу"
+
+msgid "Final exam"
+msgstr "Қорытынды емтихан"
+
+msgid "Total"
+msgstr "Жалпы"
+
+msgid "Point"
+msgstr "Ұпай"
+
+msgid "Grade"
+msgstr "Баға"
+
+msgid "Comment"
+msgstr "Пікір"
+
+msgid "Points"
+msgstr "Ұпайлар"
+
+msgid "PASS"
+msgstr "ӨТТІ"
+
+msgid "FAIL"
+msgstr "ӨТПЕДІ"
+
+msgid "Total first semester credit:"
+msgstr "Бірінші семестрдің жалпы кредиты:"
+
+msgid "First Semester GPA:"
+msgstr "Бірінші семестрдің GPA-сы:"
+
+msgid "GRADE"
+msgstr "БАҒА"
+msgid "Total second semester credit:"
+msgstr "Екінші семестрдің жалпы кредиты:"
+
+msgid "Total Credit:"
+msgstr "Жалпы кредит:"
+
+msgid "Second Semester GPA:"
+msgstr "Екінші семестрдің GPA-сы:"
+
+msgid "Previous CGPA:"
+msgstr "Алдыңғы CGPA:"
+
+msgid "Search result for"
+msgstr "Іздеу нәтижесі"
+
+msgid "Search"
+msgstr "Іздеу"
+
+msgid "result"
+msgstr "нәтиже"
+
+msgid "Program of"
+msgstr "Бағдарлама"
+
+msgid "News And Events"
+msgstr "Жаңалықтар мен оқиғалар"
+
+msgid "Date:"
+msgstr "Күні:"
+
+msgid "quiz"
+msgstr "тест"
+
+msgid "Course:"
+msgstr "Курс:"
+
+msgid "Search by:"
+msgstr "Іздеу өлшемі:"
+
+msgid "Title or Description"
+msgstr "Атауы немесе сипаттамасы"
+
+msgid "Title, Code or Description"
+msgstr "Атауы, коды немесе сипаттамасы"
+
+msgid "Title, Description or Category(practice, assignment and exam)"
+msgstr "Атауы, сипаттамасы немесе санаты (практика, тапсырма және емтихан)"
+
+msgid "Manage"
+msgstr "Басқару"
+
+msgid "students"
+msgstr "студенттерді"
+
+msgid "sessions"
+msgstr "сессияларды"
+
+msgid "semesters"
+msgstr "семестрлерді"
+
+msgid "Switch"
+msgstr "Ауыстыру"
+
+msgid "programs"
+msgstr "бағдарламаларды"
+msgid "course allocations"
+msgstr "Курстарды бөлу"
+
+msgid "Password Change"
+msgstr "Құпиясөзді өзгерту"
+
+msgid "Account setting"
+msgstr "Есептік жазба баптаулары"
+
+msgid "Account Settings"
+msgstr "Есептік жазба баптаулары"
+
+msgid "Update Profile"
+msgstr "Профильді жаңарту"
+
+msgid "File upload"
+msgstr "Файл жүктеу"
+
+msgid "File upload for"
+msgstr "Файл жүктеу үшін"
+
+msgid "File Upload Form"
+msgstr "Файл жүктеу формасы"
+
+msgid "Upload"
+msgstr "Жүктеу"
+
+msgid "Video upload"
+msgstr "Бейне жүктеу"
+
+msgid "Video upload for"
+msgstr "Бейне жүктеу үшін"
+
+msgid "Video Upload Form"
+msgstr "Бейне жүктеу формасы"
+
+msgid "No video description set."
+msgstr "Бейненің сипаттамасы орнатылмаған."
+
+msgid "{editor}: Editing failed"
+msgstr "{editor}: Өңдеу қатесі"
+
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}: Өңдеу қатесі: {e}"
+
+msgid "Aborted!"
+msgstr "Тоқтатылды!"
+
+msgid "Show this message and exit."
+msgstr "Бұл хабарламаны көрсету және шығу."
+
+msgid "(Deprecated) {text}"
+msgstr "(Ескірген) {text}"
+
+msgid "Options"
+msgstr "Опциялар"
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "Күтпеген қосымша аргумент алынды ({args})"
+msgstr[1] "Күтпеген қосымша аргументтер алынды ({args})"
+
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr "Ескертпе: {name!r} командасы ескірген."
+
+msgid "Commands"
+msgstr "Командалар"
+
+msgid "Missing command."
+msgstr "Команда жетіспейді."
+
+msgid "No such command {name!r}."
+msgstr "{name!r} деген команда жоқ."
+
+msgid "Value must be an iterable."
+msgstr "Мән қайталанатын болуы керек."
+
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "{nargs} мән қажет, бірақ 1 берілді."
+msgstr[1] "{nargs} мән қажет, бірақ {len} берілді."
+
+msgid "env var: {var}"
+msgstr "ортаның айнымалысы: {var}"
+
+msgid "(dynamic)"
+msgstr "(динамикалық)"
+
+msgid "default: {default}"
+msgstr "әдепкі: {default}"
+
+msgid "required"
+msgstr "қажет"
+
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s, нұсқа %(version)s"
+
+msgid "Show the version and exit."
+msgstr "Нұсқаны көрсету және шығу."
+
+msgid "Error: {message}"
+msgstr "Қате: {message}"
+
+msgid "Try '{command} {option}' for help."
+msgstr "Көмек алу үшін '{command} {option}' қолданып көріңіз."
+
+msgid "Invalid value: {message}"
+msgstr "Жарамсыз мән: {message}"
+
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "{param_hint} үшін жарамсыз мән: {message}"
+
+msgid "Missing argument"
+msgstr "Аргумент жетіспейді"
+
+msgid "Missing option"
+msgstr "Опция жетіспейді"
+
+msgid "Missing parameter"
+msgstr "Параметр жетіспейді"
+
+msgid "Missing {param_type}"
+msgstr "{param_type} жетіспейді"
+
+msgid "Missing parameter: {param_name}"
+msgstr "Жетіспейтін параметр: {param_name}"
+
+msgid "No such option: {name}"
+msgstr "Мұндай опция жоқ: {name}"
+#: venv/lib/python3.9/site-packages/click/exceptions.py:224
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "Сіз {possibility} дегенді меңзедіңіз бе?"
+msgstr[1] "(Мүмкін нұсқалар: {possibilities})"
+
+#: venv/lib/python3.9/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr "белгісіз қате"
+
+#: venv/lib/python3.9/site-packages/click/exceptions.py:269
+msgid "Could not open file {filename!r}: {message}"
+msgstr "{filename!r} файлын ашу мүмкін болмады: {message}"
+
+#: venv/lib/python3.9/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "{name!r} аргументі {nargs} мән қабылдайды."
+
+#: venv/lib/python3.9/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr "{name!r} параметрі мән қабылдамайды."
+
+#: venv/lib/python3.9/site-packages/click/parser.py:474
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "{name!r} параметрі аргумент талап етеді."
+msgstr[1] "{name!r} параметрі {nargs} аргумент талап етеді."
+
+#: venv/lib/python3.9/site-packages/click/shell_completion.py:319
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "Shell автотолтыруы Bash 4.4 нұсқасынан ескі нұсқаларда қолдау таппайды."
+
+#: venv/lib/python3.9/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "Bash нұсқасы анықталмады, shell автотолтыруы қолдау таппайды."
+
+#: venv/lib/python3.9/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr "Растау үшін қайталаңыз"
+
+#: venv/lib/python3.9/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr "Қате: енгізілген мән жарамсыз."
+
+#: venv/lib/python3.9/site-packages/click/termui.py:176
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr "Қате: {e.message}"
+
+#: venv/lib/python3.9/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr "Қате: енгізілген екі мән сәйкес келмейді."
+
+#: venv/lib/python3.9/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr "Қате: жарамсыз енгізу"
+
+#: venv/lib/python3.9/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr "Жалғастыру үшін кез келген пернені басыңыз..."
+
+#: venv/lib/python3.9/site-packages/click/types.py:266
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"Таңдаңыз:\n"
+"\t{choices}"
+
+#: venv/lib/python3.9/site-packages/click/types.py:298
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} {choice} емес."
+msgstr[1] "{value!r} {choices} нұсқаларының бірі емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:392
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} {format} форматына сәйкес келмейді."
+msgstr[1] "{value!r} {formats} форматтарына сәйкес келмейді."
+
+#: venv/lib/python3.9/site-packages/click/types.py:414
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} жарамды {number_type} емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:470
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr "{value} {range} ауқымында емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:611
+msgid "{value!r} is not a valid boolean."
+msgstr "{value!r} жарамды бульдік мән емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:635
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} жарамды UUID емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:822
+msgid "file"
+msgstr "файл"
+
+#: venv/lib/python3.9/site-packages/click/types.py:824
+msgid "directory"
+msgstr "каталог"
+
+#: venv/lib/python3.9/site-packages/click/types.py:826
+msgid "path"
+msgstr "жол"
+
+#: venv/lib/python3.9/site-packages/click/types.py:877
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} жоқ."
+
+#: venv/lib/python3.9/site-packages/click/types.py:886
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} файл болып табылады."
+
+#: venv/lib/python3.9/site-packages/click/types.py:894
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr "{name} '{filename}' каталог болып табылады."
+
+#: venv/lib/python3.9/site-packages/click/types.py:903
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} оқуға жарамсыз."
+
+#: venv/lib/python3.9/site-packages/click/types.py:912
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} жазуға жарамсыз."
+
+#: venv/lib/python3.9/site-packages/click/types.py:921
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} орындалатын файл емес."
+
+#: venv/lib/python3.9/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "{len_type} мән қажет, бірақ {len_value} берілді."
+msgstr[1] "{len_type} мәндер қажет, бірақ {len_value} берілді."
+
+#: venv/lib/python3.9/site-packages/crispy_forms/tests/test_form_helper.py:130
+#: venv/lib/python3.9/site-packages/crispy_forms/tests/test_form_helper.py:140
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:91
+msgid "This field is required."
+msgstr "Бұл өріс міндетті."
+
+#: venv/lib/python3.9/site-packages/crispy_forms/tests/test_layout.py:392
+msgid "i18n text"
+msgstr "i18n мәтіні"
+
+#: venv/lib/python3.9/site-packages/crispy_forms/tests/test_layout.py:394
+msgid "i18n legend"
+msgstr "i18n тақырыбы"
+
+#: venv/lib/python3.9/site-packages/crispy_forms/tests/test_layout_objects.py:143
+#: venv/lib/python3.9/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Жарамды мән енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/contrib/messages/apps.py:15
+msgid "Messages"
+msgstr "Хабарламалар"
+
+#: venv/lib/python3.9/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Сайт карталары"
+
+#: venv/lib/python3.9/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Статикалық файлдар"
+
+#: venv/lib/python3.9/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Синдикация"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.9/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: venv/lib/python3.9/site-packages/django/core/paginator.py:50
+msgid "That page number is not an integer"
+msgstr "Бет нөмірі бүтін сан болуы керек"
+
+#: venv/lib/python3.9/site-packages/django/core/paginator.py:52
+msgid "That page number is less than 1"
+msgstr "Бет нөмірі 1-ден кем болмауы керек"
+
+#: venv/lib/python3.9/site-packages/django/core/paginator.py:54
+msgid "That page contains no results"
+msgstr "Бұл бетте нәтиже жоқ"
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:104
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:752
+msgid "Enter a valid URL."
+msgstr "Жарамды URL енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:165
+msgid "Enter a valid integer."
+msgstr "Жарамды бүтін сан енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:176
+msgid "Enter a valid email address."
+msgstr "Жарамды электрондық пошта енгізіңіз."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.9/site-packages/django/core/validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr "Әріптерден, сандардан, астын сызу белгілерінен немесе дефистен тұратын жарамды «slug» енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr "Юникод әріптерінен, сандардан, астын сызу белгілерінен немесе дефистен тұратын жарамды «slug» енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:279
+#: venv/lib/python3.9/site-packages/django/core/validators.py:287
+#: venv/lib/python3.9/site-packages/django/core/validators.py:316
+msgid "Enter a valid IPv4 address."
+msgstr "Жарамды IPv4 мекенжайын енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:296
+#: venv/lib/python3.9/site-packages/django/core/validators.py:317
+msgid "Enter a valid IPv6 address."
+msgstr "Жарамды IPv6 мекенжайын енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:308
+#: venv/lib/python3.9/site-packages/django/core/validators.py:315
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Жарамды IPv4 немесе IPv6 мекенжайын енгізіңіз."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:351
+msgid "Enter only digits separated by commas."
+msgstr "Введите только цифры, разделенные запятыми."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:357
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Убедитесь, что значение равно %(limit_value)s (сейчас: %(show_value)s)."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:392
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Убедитесь, что значение меньше или равно %(limit_value)s."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:401
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Убедитесь, что значение больше или равно %(limit_value)s."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:410
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Убедитесь, что значение кратно %(limit_value)s."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:420
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Убедитесь, что значение содержит не менее %(limit_value)d символа (сейчас: %(show_value)d)."
+msgstr[1] "Убедитесь, что значение содержит не менее %(limit_value)d символов (сейчас: %(show_value)d)."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:438
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Убедитесь, что значение содержит не более %(limit_value)d символа (сейчас: %(show_value)d)."
+msgstr[1] "Убедитесь, что значение содержит не более %(limit_value)d символов (сейчас: %(show_value)d)."
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:461
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:347
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:386
+msgid "Enter a number."
+msgstr "Введите число."
+
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:463
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:468
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:544
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/core/validators.py:605
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:129
+msgid "This field cannot be null."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:130
+msgid "This field cannot be blank."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1149
+msgid "String (unlimited)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1253
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1358
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1362
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1502
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1628
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1793
+msgid "Duration"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1845
+msgid "Email address"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1870
+msgid "File path"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1950
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:1992
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2105
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2113
+msgid "IPv4 address"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2144
+msgid "IP address"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2237
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2291
+msgid "Positive big integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2306
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2321
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2373
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2456
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2564
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2588
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/__init__.py:2655
+msgid "Universally unique identifier"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/files.py:232
+msgid "File"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/files.py:393
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/json.py:26
+msgid "A JSON object"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:1212
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/db/models/fields/related.py:1319
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.9/site-packages/django/forms/boundfield.py:184
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:467
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1241
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:490
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1242
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:622
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:623
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:630
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:857
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:949
+#: venv/lib/python3.9/site-packages/django/forms/models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:951
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1070
+#: venv/lib/python3.9/site-packages/django/forms/models.py:1564
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1071
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1310
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/fields.py:1340
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.9/site-packages/django/forms/forms.py:98
+msgid ":"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/forms.py:244
+#: venv/lib/python3.9/site-packages/django/forms/forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.9/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:907
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:1429
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:463
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:464
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:465
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:794
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:795
+msgid "Yes"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/forms/widgets.py:796
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:874
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:904
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:921
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:923
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:925
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:927
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:929
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/template/defaultfilters.py:931
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:73
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:74
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:79
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:80
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:152
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dateformat.py:154
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/text.py:137
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.9/site-packages/django/utils/text.py:341
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:349
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:229
+msgid "Django Documentation"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:239
+msgid "Get started with Django"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:247
+msgid "Django Community"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/django/views/templates/default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/kombu/transport/qpid.py:1311
+#, python-format
+msgid "Attempting to connect to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/kombu/transport/qpid.py:1316
+#, python-format
+msgid "Connected to qpid with SASL mechanism %s"
+msgstr ""
+
+#: venv/lib/python3.9/site-packages/kombu/transport/qpid.py:1334
+#, python-format
+msgid "Unable to connect to qpid with SASL mechanism %s"
+msgstr ""
