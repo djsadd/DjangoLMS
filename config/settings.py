@@ -63,6 +63,8 @@ PROJECT_APPS = [
     "search.apps.SearchConfig",
     "quiz.apps.QuizConfig",
     "payments.apps.PaymentsConfig",
+
+    'ckeditor',
 ]
 
 # Combine all apps
@@ -253,20 +255,20 @@ YEARS = (
     (6, "6"),
 )
 
-BACHELOR_DEGREE = "Bachelor"
-MASTER_DEGREE = "Master"
+BACHELOR_DEGREE = "Beginner"
+MASTER_DEGREE = "Advanced"
 
 LEVEL_CHOICES = (
-    (BACHELOR_DEGREE, _("Bachelor Degree")),
-    (MASTER_DEGREE, _("Master Degree")),
+    (BACHELOR_DEGREE, _("Бастаушы")),
+    (MASTER_DEGREE, _("Жетілдірілген")),
 )
 
-FIRST = "First"
-SECOND = "Second"
-THIRD = "Third"
+FIRST = "Первый"
+SECOND = "Второй"
+THIRD = "Третий"
 
 SEMESTER_CHOICES = (
-    (FIRST, _("First")),
-    (SECOND, _("Second")),
-    (THIRD, _("Third")),
+    (FIRST, _("Первый")),
+    (SECOND, _("Второй")),
+    (THIRD, _("Третий")),
 )

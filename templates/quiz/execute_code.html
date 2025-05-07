@@ -17,7 +17,7 @@
 
 <div class="container">
     <h2>{{ program.title }}</h2>
-    <p>{{ program.description }}</p>
+    <p>{{ program.description|safe }}</p>
     
     <form id="code-form" method="POST">{% csrf_token %}
         <div class="mb-3">

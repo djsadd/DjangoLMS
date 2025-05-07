@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.models import Group
 
-from .models import Program, Course, CourseAllocation, Upload
+from .models import Program, Course, CourseAllocation, Upload, UploadVideo
 from modeltranslation.admin import TranslationAdmin
 
 class ProgramAdmin(TranslationAdmin):
@@ -15,3 +15,4 @@ admin.site.register(Program, ProgramAdmin)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(CourseAllocation)
 admin.site.register(Upload, UploadAdmin)
+admin.site.register(UploadVideo)

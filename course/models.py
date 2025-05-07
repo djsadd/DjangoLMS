@@ -82,6 +82,7 @@ class Course(models.Model):
     def is_current_semester(self):
 
         current_semester = Semester.objects.filter(is_current_semester=True).first()
+
         return self.semester == current_semester.semester if current_semester else False
 
 

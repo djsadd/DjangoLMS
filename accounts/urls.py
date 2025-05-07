@@ -1,5 +1,5 @@
 from django.urls import path, include
-
+from django.contrib.auth.views import PasswordResetView
 # from django.contrib.auth.views import (
 #     PasswordResetView,
 #     PasswordResetDoneView,
@@ -56,6 +56,10 @@ urlpatterns = [
     path("parents/add/", ParentAdd.as_view(), name="add_parent"),
     path("ajax/validate-username/", validate_username, name="validate_username"),
     path("register/", register, name="register"),
+    # path('password-reset/', PasswordResetView.as_view(
+    #     form_class=EmailValidationOnForgotPassword,
+    #     template_name='registration/password_reset.html'
+    # )),
     # paths to pdf
     path(
         "create_lecturers_pdf_list/", render_lecturer_pdf_list, name="lecturer_list_pdf"
@@ -71,10 +75,7 @@ urlpatterns = [
     # ################################################################
     # path('login/', LoginView.as_view(), name='login'),
     # path('logout/', LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
-    # path('password-reset/', PasswordResetView.as_view(
-    #     form_class=EmailValidationOnForgotPassword,
-    #     template_name='registration/password_reset.html'
-    # ),
+
     #      name='password_reset'),
     # path('password-reset/done/', PasswordResetDoneView.as_view(
     #     template_name='registration/password_reset_done.html'

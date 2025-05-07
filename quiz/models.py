@@ -44,11 +44,11 @@ class QuizManager(models.Manager):
             )
             queryset = queryset.filter(or_lookup).distinct()
         return queryset
-
+from ckeditor.fields import RichTextField
 
 class Program(models.Model):
     title = models.CharField(max_length=60)
-    description = models.TextField(
+    description = RichTextField(
         verbose_name=_("Description"),
         blank=True,
         help_text=_("A detailed description of the quiz"),

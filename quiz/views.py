@@ -134,7 +134,7 @@ def quiz_list(request, slug):
 @login_required
 def program_list(request, slug):
     course = get_object_or_404(Course, slug=slug)
-    quizzes = Program.objects.filter(course=course).order_by("-timestamp")
+    quizzes = Program.objects.filter(course=course).order_by("timestamp")
     return render(
         request, "quiz/program_list.html", {"quizzes": quizzes, "course": course}
     )
