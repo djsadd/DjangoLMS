@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{{ title }} | {% trans 'Learning management system' %}{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12 p-0">
+        <p class="form-title m-0">{% trans 'Тапсырманы тексеру' %}</p>
+        <div class="table-responsive">
+            <table class="table table-shadow table-light table-striped m-0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>{% trans 'Тапсырма' %}</th>
+                        <th>{% trans 'студент' %}</th>
+                        <th>{% trans 'Баға' %}</th>
+                        <!-- <th>{% trans 'Downloads' %}</th> -->
+                        <!-- {% if request.user.is_superuser or request.user.is_lecturer %}
+                        <th>{% trans 'Actions' %}</th>
+                        {% endif %} -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for code in di %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'check_student_program' code.pk %}" title="code.title" class="d-flex align-items-center">
+                                <i class="fas fa-file- me-1"></i>
+                                {{ code.program.title|title }}
+                            </a>
+                        </td>
+                        <td>{{ code.student }}</td>
+                        <td>Жарияланбаған</td>
+                        <!-- <th>
+                            <div>
+                                <a class="download-btn" href="{{ file.file.url }}" title="Download to your device">
+                                    <i class="fas fa-download me-1"></i>{% trans 'Download' %}</a>
+                            </div>
+                        </th> -->
+
+                        {% if request.user.is_superuser or request.user.is_lecturer %}
+                        <td>
+
+                        </td>
+                        {% endif %}
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <span class="text-danger">
+                                {% trans 'Әлі ешкім тапсырма берген жоқ..' %}
+                                {% if request.user.is_superuser or request.user.is_lecturer %}
+                                    <i class="primary" style="font-size: 22px;">
+                                    </i>
+                                    {% endif %}
+                                </a>
+                            </span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

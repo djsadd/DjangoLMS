@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+{% block content %}
+
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'programs' %}">{% trans 'Programs' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{% trans 'Code Editor' %}</li>
+    </ol>
+</nav>
+
+<div class="title-1">{% trans 'Python Interpreter for' %} {{ course|truncatechars:15 }}</div>
+<br><br>
+
+<div class="container">
+    <h2>{{ program.title }}</h2>
+    <p>{{ program.description|safe }}</p>
+    
+    <form id="code-form" method="POST">{% csrf_token %}
+        <div class="mb-2 d-flex align-items-center justify-content-between flex-wrap">
+            <label for="code-editor" class="mb-1 fw-semibold">{% trans 'Enter Python code' %}</label>
+            <div class="btn-group" role="group" aria-label="Editor actions">
+                <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-format">
+                    <i class="fas fa-align-left me-1"></i>{% trans 'Format' %}
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-monospace">
+                    <i class="fas fa-text-height me-1"></i>{% trans 'Toggle wrap' %}
+                </button>
+            </div>
+        </div>
+        {% if program_code %}
+            <textarea class="form-control d-none" id="code" name="code" rows="10">{{ program_code.code }}</textarea>
+        {% else %}
+            <textarea class="form-control d-none" id="code" name="code" rows="10">{{ program.code }}</textarea>
+        {% endif %}
+        <div id="code-editor" class="border rounded-3 shadow-sm" style="width: 100%; min-height: 380px;"></div>
+
+        <div class="mt-3 d-flex gap-2 flex-wrap">
+            <button type="button" class="btn btn-primary" onclick="runCode('run')">
+                <i class="fas fa-play me-1"></i>{% trans 'Run' %}
+            </button>
+
+            {% if request.user.is_superuser or request.user.is_lecturer %}
+            <div class="d-flex gap-2 flex-wrap align-items-center">
+                <input type="number" id="grade" min="1" max="100" step="1" class="form-control" style="width: 140px;" placeholder="{% trans 'Grade 1-100' %}">
+                <button type="button" class="btn btn-success" onclick="runCode('save')">
+                    <i class="fas fa-save me-1"></i>{% trans 'Save Grade' %}
+                </button>
+            </div>
+            {% endif %}
+        </div>
+    </form>
+
+    <h3 class="mt-4">{% trans 'Result' %}:</h3>
+    <pre id="output" class="p-3 border bg-light"></pre>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.0/src-min-noconflict/ace.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.0/src-min-noconflict/mode-python.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.0/src-min-noconflict/theme-github.js"></script>
+<script>
+    const hiddenTextarea = document.getElementById("code");
+    let aceEditor = null;
+    if (window.ace && document.getElementById("code-editor")) {
+        aceEditor = ace.edit("code-editor");
+        aceEditor.setTheme("ace/theme/github");
+        aceEditor.session.setMode("ace/mode/python");
+        aceEditor.setValue(hiddenTextarea.value || "", -1);
+        aceEditor.session.setUseSoftTabs(true);
+        aceEditor.session.setTabSize(4);
+        aceEditor.setOption("fontSize", "14px");
+        aceEditor.setOption("minLines", 20);
+        aceEditor.setOption("maxLines", Infinity);
+        aceEditor.setShowPrintMargin(false);
+        aceEditor.renderer.setPadding(12);
+        aceEditor.renderer.setScrollMargin(12, 12, 12, 12);
+        aceEditor.session.setUseWrapMode(false);
+        aceEditor.focus();
+    }
+
+    document.getElementById("btn-format").addEventListener("click", function() {
+        if (!aceEditor) return;
+        const code = aceEditor.getValue();
+        const trimmed = code.replace(/[ \t]+$/gm, "").replace(/\n{3,}/g, "\n\n");
+        aceEditor.setValue(trimmed, -1);
+    });
+
+    document.getElementById("btn-monospace").addEventListener("click", function() {
+        if (!aceEditor) return;
+        const current = aceEditor.getSession().getUseWrapMode();
+        aceEditor.getSession().setUseWrapMode(!current);
+    });
+
+    function getEditorCode() {
+        if (aceEditor) {
+            return aceEditor.getValue();
+        }
+        return hiddenTextarea.value;
+    }
+
+    function runCode(action) {
+        var code = getEditorCode();
+        var gradeInput = document.getElementById("grade");
+        var grade = gradeInput ? gradeInput.value : null;
+
+        var data = {
+            code: code,
+            action: action
+        };
+
+        if (action === 'save') {
+            if (!grade) {
+                alert("{% trans 'Please enter a grade before saving.' %}");
+                return;
+            }
+            data.grade = grade;
+        }
+
+        fetch("{% url 'check_student_program' program_code.pk %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": getCookie("csrftoken")
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (action === 'run') {
+                document.getElementById("output").textContent =
+                    data.run?.stdout || data.run?.stderr || "{% trans 'Error!' %}";
+            } else if (action === 'save') {
+                document.getElementById("output").textContent = data.message || "{% trans 'Grade saved successfully!' %}";
+            }
+        })
+        .catch(error => {
+            document.getElementById("output").textContent = "{% trans 'OK!' %}";
+        });
+    }
+
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+</script>
+{% endblock js %}

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environments
+.env
+venv/
+.env*/
+
+# Django
+static/
+media/
+*.log
+
+# Databases
+*.sqlite3
+db.sqlite3
+
+# Node
+node_modules/
+
+# VCS & editor
+.git/
+.gitignore
+.vscode/
+.idea/

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Electronic Library' %} | {% trans 'Learning management system' %}{% endblock title %}
+{% load static %}
+
+{% block content %}
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{% trans 'Electronic Library' %}</li>
+    </ol>
+</nav>
+
+<div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+    <div>
+        <div class="title-1 mb-1">{% trans 'Electronic Library' %}</div>
+        <p class="text-muted mb-0">{% trans 'Digital materials for students and lecturers.' %}</p>
+    </div>
+    <form method="get" class="d-flex" role="search">
+        <input type="search" class="form-control me-2" name="q" value="{{ query }}" placeholder="{% trans 'Search resources' %}">
+        <button class="btn btn-primary" type="submit">{% trans 'Search' %}</button>
+    </form>
+</div>
+
+{% include 'snippets/messages.html' %}
+
+{% if resources %}
+<div class="row">
+    {% for resource in resources %}
+    <div class="col-md-6 col-lg-4 mb-3">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2">{{ resource.title }}</h5>
+                {% if resource.description %}
+                <p class="card-text text-muted small">{{ resource.description|truncatechars:180 }}</p>
+                {% endif %}
+                <div class="mt-auto">
+                    {% if resource.file %}
+                        <a class="btn btn-sm btn-outline-primary me-2" href="{{ resource.file.url }}" target="_blank">
+                            <i class="fas fa-download"></i> {% trans 'Download' %}
+                        </a>
+                    {% endif %}
+                    {% if resource.link %}
+                        <a class="btn btn-sm btn-outline-secondary" href="{{ resource.link }}" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i> {% trans 'Open link' %}
+                        </a>
+                    {% endif %}
+                    {% if not resource.file and not resource.link %}
+                        <span class="text-warning small">{% trans 'No file or link provided.' %}</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="card-footer text-muted small">
+                {% trans 'Updated' %}: {{ resource.updated_at|date:"SHORT_DATE_FORMAT" }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% if resources.paginator.page_range|length > 1 %}
+<div class="content-center">
+    <div class="pagination">
+        {% if resources.has_previous %}
+            <a href="?page=1{% if query %}&q={{ query }}{% endif %}">&laquo;</a>
+        {% endif %}
+        {% for i in resources.paginator.page_range %}
+            {% if i == resources.number %}
+                <a class="pagination-active" href="?page={{ i }}{% if query %}&q={{ query }}{% endif %}"><b>{{ i }}</b></a>
+            {% else %}
+                <a href="?page={{ i }}{% if query %}&q={{ query }}{% endif %}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+        {% if resources.has_next %}
+            <a href="?page={{ resources.paginator.num_pages }}{% if query %}&q={{ query }}{% endif %}">&raquo;</a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+{% else %}
+    <div class="alert alert-info">{% trans 'No resources found yet.' %}</div>
+{% endif %}
+{% endblock content %}

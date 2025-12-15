@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans 'Manage Electronic Library' %} | {% trans 'Learning management system' %}{% endblock title %}
+{% load static %}
+
+{% block content %}
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">{% trans 'Home' %}</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'electronic_library' %}">{% trans 'Electronic Library' %}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{% trans 'Manage' %}</li>
+    </ol>
+</nav>
+
+<div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+    <div>
+        <div class="title-1 mb-1">{% trans 'Manage Electronic Library' %}</div>
+        <p class="text-muted mb-0">{% trans 'Admins can add, filter, and review uploaded literature.' %}</p>
+    </div>
+</div>
+
+{% include 'snippets/messages.html' %}
+
+<div class="row">
+    <div class="col-lg-5">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header fw-bold">{% trans 'Add new resource' %}</div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">{% trans 'Title' %}</label>
+                        {{ form.title }}
+                        {{ form.title.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">{% trans 'Description' %}</label>
+                        {{ form.description }}
+                        {{ form.description.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">{% trans 'File' %}</label>
+                        {{ form.file }}
+                        {{ form.file.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">{% trans 'Link' %}</label>
+                        {{ form.link }}
+                        {{ form.link.errors }}
+                    </div>
+                    <p class="small text-muted mb-2">{% trans 'Provide either a file or a link. Both are allowed.' %}</p>
+                    <button class="btn btn-primary" type="submit">{% trans 'Create' %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form method="get" class="row g-2 align-items-end mb-3">
+                    <div class="col-md-5">
+                        <label class="form-label">{% trans 'Search' %}</label>
+                        <input type="search" class="form-control" name="q" value="{{ query }}" placeholder="{% trans 'Search resources' %}">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">{% trans 'Filter' %}</label>
+                        <select class="form-select" name="kind">
+                            <option value="all" {% if kind == "all" %}selected{% endif %}>{% trans 'All' %}</option>
+                            <option value="files" {% if kind == "files" %}selected{% endif %}>{% trans 'With file' %}</option>
+                            <option value="links" {% if kind == "links" %}selected{% endif %}>{% trans 'With link' %}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-outline-primary w-100" type="submit">{% trans 'Apply' %}</button>
+                    </div>
+                </form>
+
+                {% if resources %}
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>{% trans 'Title' %}</th>
+                                <th>{% trans 'Type' %}</th>
+                                <th>{% trans 'Updated' %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for resource in resources %}
+                            <tr>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ resource.title }}</td>
+                                <td>
+                                    {% if resource.file %}<span class="badge bg-primary">{% trans 'File' %}</span>{% endif %}
+                                    {% if resource.link %}<span class="badge bg-secondary">{% trans 'Link' %}</span>{% endif %}
+                                </td>
+                                <td>{{ resource.updated_at|date:"SHORT_DATE_FORMAT" }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                {% if resources.paginator.page_range|length > 1 %}
+                <div class="content-center">
+                    <div class="pagination">
+                        {% if resources.has_previous %}
+                            <a href="?page=1{% if query %}&q={{ query }}{% endif %}{% if kind %}&kind={{ kind }}{% endif %}">&laquo;</a>
+                        {% endif %}
+                        {% for i in resources.paginator.page_range %}
+                            {% if i == resources.number %}
+                                <a class="pagination-active" href="?page={{ i }}{% if query %}&q={{ query }}{% endif %}{% if kind %}&kind={{ kind }}{% endif %}"><b>{{ i }}</b></a>
+                            {% else %}
+                                <a href="?page={{ i }}{% if query %}&q={{ query }}{% endif %}{% if kind %}&kind={{ kind }}{% endif %}">{{ i }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        {% if resources.has_next %}
+                            <a href="?page={{ resources.paginator.num_pages }}{% if query %}&q={{ query }}{% endif %}{% if kind %}&kind={{ kind }}{% endif %}">&raquo;</a>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+                {% else %}
+                    <div class="alert alert-info mb-0">{% trans 'No resources found yet.' %}</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
