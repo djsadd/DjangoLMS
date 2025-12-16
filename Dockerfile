@@ -32,5 +32,7 @@ RUN python manage.py collectstatic --noinput || echo "collectstatic skipped"
 
 EXPOSE 8000
 
-# Default command: run with Daphne (ASGI) for WebSockets
+# Entrypoint handles first-run SQLite copy and migrations before starting server
+RUN chmod +x /app/scripts/docker-entrypoint.sh
+ENTRYPOINT ["bash", "/app/scripts/docker-entrypoint.sh"]
 CMD ["daphne", "-b", "0.0.0.0", "-p", "8000", "config.asgi:application"]

@@ -6,9 +6,8 @@
 <button id="chat-message-submit">Отправить</button>
 
 <script>
-    const chatSocket = new WebSocket(
-        'ws://' + window.location.host + '/ws/chat/bot/'
-    );
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+    const chatSocket = new WebSocket(wsProtocol + window.location.host + '/ws/chat/bot/');
 
     chatSocket.onmessage = function(e) {
         const data = JSON.parse(e.data);

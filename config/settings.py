@@ -124,6 +124,7 @@ DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT", "5432")
+SQLITE_PATH = os.getenv("SQLITE_PATH")
 SQLITE_OLD_PATH = os.getenv("SQLITE_OLD_PATH")
 
 if DB_HOST and DB_NAME and DB_USER:
@@ -138,10 +139,11 @@ if DB_HOST and DB_NAME and DB_USER:
         }
     }
 else:
+    sqlite_path = SQLITE_PATH or os.path.join(BASE_DIR, "db.sqlite3")
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+            "NAME": sqlite_path,
         }
     }
 

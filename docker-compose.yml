@@ -5,33 +5,22 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # Use Daphne for ASGI since Channels is installed
-    command: bash -c "python manage.py migrate; python manage.py migrate_sqlite_to_postgres || true; daphne -b 0.0.0.0 -p 8000 config.asgi:application"
     ports:
       - "8000:8000"
     environment:
-      # Customize these as needed; add DB settings if using Postgres
       DJANGO_SETTINGS_MODULE: config.settings
-      # Set to production to disable debug if desired
       DJANGO_DEBUG: "True"
-      # Example secret key (override in .env)
       DJANGO_SECRET_KEY: "change-me"
       OPENAI_API_KEY: ${OPENAI_API_KEY}
-      # Postgres connection (enable to switch from SQLite)
-      DB_NAME: ${DB_NAME}
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
-      DB_HOST: ${DB_HOST}
-      DB_PORT: ${DB_PORT}
-      # Path to existing SQLite db for one-time migration
-      SQLITE_OLD_PATH: /app/db.sqlite3
+      # SQLite database location inside the container (persisted on volume)
+      SQLITE_PATH: /data/db.sqlite3
     volumes:
       - .:/app
+      - sqlite_data:/data
       - staticfiles_data:/app/staticfiles
       - media_data:/app/media
     depends_on:
       - redis
-      - db
 
   # Optional Redis for Django Channels / caching
   redis:
@@ -40,18 +29,7 @@ services:
       - "6379:6379"
     command: ["redis-server", "--appendonly", "yes"]
 
-  db:
-    image: postgres:16-alpine
-    environment:
-      POSTGRES_DB: ${DB_NAME:-django}
-      POSTGRES_USER: ${DB_USER:-django}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-django}
-    ports:
-      - "5432:5432"
-    volumes:
-      - pg_data:/var/lib/postgresql/data
-
 volumes:
   staticfiles_data:
   media_data:
-  pg_data:
+  sqlite_data:

@@ -19,9 +19,8 @@
     <script>
         // Сохранить данные в localStorage
 
-        const chatSocket = new WebSocket(
-            'ws://' + window.location.host + '/ws/chat/'
-        );
+        const wsProtocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+        const chatSocket = new WebSocket(wsProtocol + window.location.host + '/ws/chat/');
         
         chatSocket.onmessage = function(e) {
             const data = JSON.parse(e.data);
